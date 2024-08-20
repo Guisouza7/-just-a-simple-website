@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doacao_css.css">
+    <title>Doação Online</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Doação Online</h1>
+                <ul>
+                    <li><a href="#doar">Faça uma Doação</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="doar">
+        <div class="container">
+            <h2>Faça uma Doação</h2>
+            <p>Ajude-nos a alcançar nossos objetivos com sua doação.</p>
+            
+            <form action="#" method="post">
+                <label for="valor">Valor da Doação (R$):</label>
+                <input type="number" id="valor" name="valor" step="0.01" min="1" required>
+                
+                <label for="opcao-pagamento">Escolha a opção de pagamento:</label>
+                <div class="payment-options">
+                    <div class="payment-option">
+                        <input type="radio" id="credito" name="opcao-pagamento" value="credito" required>
+                        <label for="credito">Cartão de Crédito</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="debito" name="opcao-pagamento" value="debito" required>
+                        <label for="debito">Cartão de Débito</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="deposito" name="opcao-pagamento" value="deposito" required>
+                        <label for="deposito">Depósito Bancário</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="pix" name="opcao-pagamento" value="pix" required>
+                        <label for="pix">Pix</label>
+                    </div>
+                </div>
+                
+                <button type="submit">Doar Agora</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Doação Online</p>
+        </div>
+    </footer>
+</body>
+</html>
